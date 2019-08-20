@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -15,6 +16,7 @@ namespace Senai.Sstop.WebApi.Controllers
    
     public class EstilosController : ControllerBase
     {
+
         List<EstiloDomain> estilos = new List<EstiloDomain>()
         {
             new EstiloDomain { IdEstilo = 1, Nome = "Rock"}
@@ -36,9 +38,9 @@ namespace Senai.Sstop.WebApi.Controllers
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(int id)
         {
-           
 
-            EstiloDomain Estilo = estilos.Find(x => x.IdEstilo == id);
+            EstiloDomain Estilo = estiloRepository.BuscarPorId(id);
+            //EstiloDomain Estilo = estilos.Find(x => x.IdEstilo == id);
             if(Estilo == null)
             {
                 return NotFound();
@@ -46,16 +48,43 @@ namespace Senai.Sstop.WebApi.Controllers
             return Ok(Estilo);
         }
 
+        //[HttpPost]
+        //public IActionResult Cadastrar(EstiloDomain estiloDomain)
+        //{
+        //    estilos.Add(new EstiloDomain
+        //   {
+        //     IdEstilo = estilos.Count + 1,
+        //   Nome = estiloDomain.Nome
+        //      }
+        //      );
+        //      return Ok(estilos);
+        //  }
+
+        
+     
+
         [HttpPost]
         public IActionResult Cadastrar(EstiloDomain estiloDomain)
         {
-            estilos.Add(new EstiloDomain
-            {
-                IdEstilo = estilos.Count + 1,
-                Nome = estiloDomain.Nome
-            }
-            );
-            return Ok(estilos);
+            //do bd
+            estiloRepository.Cadastrar(estiloDomain);
+            return Ok();
+        }
+
+        //Atualizar
+        [HttpPut]
+        public IActionResult Atualizar(EstiloDomain estiloDomain)
+        {
+            estiloRepository.Alterar(estiloDomain);
+            return Ok();
+        }
+
+        //Deletar
+        [HttpDelete("{ id}")]
+        public IActionResult Deletar(int id)
+        {
+            estiloRepository.Deletar(id);
+            return Ok();
         }
     }
 }

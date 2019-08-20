@@ -23,8 +23,27 @@ namespace Senai.Filmes.WebApi.Controllers
         [HttpGet]
         public IEnumerable<FilmeDomain> Listar()
         {
-            // return estilos;
             return FilmeRepository.Listar();
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult BuscarPorId(int id)
+        {
+
+            FilmeDomain Filme = FilmeRepository.BuscarPorId(id);
+            if (Filme == null)
+            {
+                return NotFound();
+            }
+            return Ok(Filme);
+        }
+
+        [HttpPost]
+        public IActionResult Cadastrar(FilmeDomain filmeDomain)
+        {
+            //do bd
+            FilmeRepository.Cadastrar(filmeDomain);
+            return Ok();
         }
     }
 }

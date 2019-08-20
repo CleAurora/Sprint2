@@ -9,7 +9,7 @@ CREATE TABLE Generos
 );
 
 insert into Generos(Nome)
-values('Animacao'), ('Drama'), ('Comedia'), ('Romance'), ('Terror');
+values('Animacao'), ('Drama'), ('Comedia'), ('Romance');
 select * from Generos;
 
 CREATE TABLE Filmes
@@ -20,7 +20,7 @@ CREATE TABLE Filmes
 );
 
 insert into Filmes(Titulo, IdGenero)
-values ('Toturo', 1), ('Entrando numa fria', 3), ('Um lugar chamado Nothing Hills', 4), ('O Chamado', 5);
+values ('Toturo', 13), ('Entrando numa fria', 15), ('Um lugar chamado Nothing Hills', 16), ('O Chamado', 1);
 select * from Filmes;
 
 select Filmes.*, Generos.*
