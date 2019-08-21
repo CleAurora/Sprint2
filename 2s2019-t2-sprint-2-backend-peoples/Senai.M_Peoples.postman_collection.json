@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "5cc11ad8-f67f-4bc3-8359-f933b54f1398",
+		"name": "Senai.M_Peoples",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Funcionarios",
+			"item": [
+				{
+					"name": "Funcionarios.Listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:5000/api/funcionarios",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"funcionarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Funcionarios.BuscarPorId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/funcionarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"funcionarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Funcionarios.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idNome\": 3,\r\n    \"nome\": \"Helena\",\r\n    \"sobrenome\": \"Stradas\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/funcionarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"funcionarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Funcionarios.Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idNome\": 3,\r\n    \"nome\": \"Ellen\",\r\n    \"sobrenome\": \"Stradas\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/funcionarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"funcionarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Funcionarios.Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/funcionarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"funcionarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Funcionarios.BuscarPorNome",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/funcionarios/buscarpor/tadeu",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"funcionarios",
+								"buscarpor",
+								"tadeu"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
