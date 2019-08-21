@@ -118,7 +118,25 @@ namespace Senai.Filmes.WebApi.Repositories
                 //executar
                 cmd.ExecuteNonQuery();
             }
-        }
+        }//fim método Atualizar
+
+        //Método deletar
+        public void Deletar(int id)
+        {
+            string Query = "delete from Filmes where IdFilme = @IdFilme";
+            //conexão
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                //comando
+                SqlCommand cmd = new SqlCommand(Query, con);
+                cmd.Parameters.AddWithValue("@IdFilme", id);
+                con.Open();
+                //executar
+                cmd.ExecuteNonQuery();
+            }
+        }//fim método doeletar
+
+
 
 
     }

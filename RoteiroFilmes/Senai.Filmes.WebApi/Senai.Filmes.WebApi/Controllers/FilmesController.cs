@@ -45,5 +45,21 @@ namespace Senai.Filmes.WebApi.Controllers
             FilmeRepository.Cadastrar(filmeDomain);
             return Ok();
         }
+
+        //Atualizar
+        [HttpPut]
+        public IActionResult Atualizar(FilmeDomain filmeDomain)
+        {
+            FilmeRepository.Alterar(filmeDomain);
+            return Ok();
+        }
+
+        //Deletar
+        [HttpDelete("{ id}")]
+        public IActionResult Deletar(int id)
+        {
+            FilmeRepository.Deletar(id);
+            return Ok();
+        }
     }
 }
