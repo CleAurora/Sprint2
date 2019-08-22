@@ -18,7 +18,18 @@ namespace Senai.Sstop.WebApi
             services.AddMvc().SetCompatibilityVersion(
                 Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1
                 );//setei minha compatibilidade
+
+            services.AddSwaggerGen(c =>
+            {
+                waggerDoc("v1",
+               new Swashbuckle.AspNetCore.Swagger.Info
+               {
+                   Title = "SStop API",
+                   Version = "v1"
+               });
+            });
         }
+    }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -29,6 +40,14 @@ namespace Senai.Sstop.WebApi
             }
 
             app.UseMvc();// para usar o mvc
-        }
+
+
+        app.UseSwagger();
+        app.UseSwaggerUI(c => {
+            c.SwaggerEndpoint("/swagger/v1/swagger.json", "SStop API V1");
+        });
+    }
+
+
     }
 }

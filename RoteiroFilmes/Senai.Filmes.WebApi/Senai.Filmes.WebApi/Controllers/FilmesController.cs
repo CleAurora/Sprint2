@@ -12,54 +12,31 @@ namespace Senai.Filmes.WebApi.Controllers
     [ApiController]
     public class FilmesController : ControllerBase
     {
-        List<FilmeDomain> estilos = new List<FilmeDomain>()
-        {
-            new FilmeDomain { IdFilme = 1, Titulo = "O Rei Leao" }
-            ,new FilmeDomain { IdFilme = 2, Titulo = "Cinderela" }
-        };
-
         FilmeRepository FilmeRepository = new FilmeRepository();
 
-        [HttpGet]
-        public IEnumerable<FilmeDomain> Listar()
-        {
-            return FilmeRepository.Listar();
-        }
-
-        [HttpGet("{id}")]
-        public IActionResult BuscarPorId(int id)
-        {
-
-            FilmeDomain Filme = FilmeRepository.BuscarPorId(id);
-            if (Filme == null)
-            {
-                return NotFound();
-            }
-            return Ok(Filme);
-        }
-
+        
+        //Cadastrar
         [HttpPost]
-        public IActionResult Cadastrar(FilmeDomain filmeDomain)
+        public IActionResult Cadastrar(FilmeDomain filme)
         {
-            //do bd
-            FilmeRepository.Cadastrar(filmeDomain);
-            return Ok();
+            try
+            {
+                //tenta fazer isso: 
+                FilmeRepository.Cadastrar(filme);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                //nao foi realizada com sucesso
+                return BadRequest(new { mensagem = "Vixi! Desculpa aí mas... rolou um erro:" + ex.Message });
+            }
         }
 
-        //Atualizar
-        [HttpPut]
-        public IActionResult Atualizar(FilmeDomain filmeDomain)
+        //Listar
+        [HttpGet]
+        public IActionResult Listar()
         {
-            FilmeRepository.Alterar(filmeDomain);
-            return Ok();
-        }
-
-        //Deletar
-        [HttpDelete("{ id}")]
-        public IActionResult Deletar(int id)
-        {
-            FilmeRepository.Deletar(id);
-            return Ok();
-        }
+            return Ok(FilmeRepository.Listar());
+        }//Fim Listar
     }
 }

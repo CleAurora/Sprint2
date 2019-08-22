@@ -23,7 +23,7 @@ insert into Filmes(Titulo, IdGenero)
 values ('Toturo', 13), ('Entrando numa fria', 15), ('Um lugar chamado Nothing Hills', 16), ('O Chamado', 1);
 select * from Filmes;
 
-select Filmes.*, Generos.*
-from Filmes
-join Generos
-on Filmes.IdGenero = Generos.IdGenero;
+select F.IdFilme, F.Titulo, F.IdGenero, G.IdGenero, G.Nome as NomeGenero
+from Filmes as F
+join Generos as G
+on F.IdGenero = G.IdGenero;              
