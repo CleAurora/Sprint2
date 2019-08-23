@@ -16,6 +16,43 @@ namespace Senai.Filmes.WebApi.Repositories
 
 
         //BuscarPorId
+
+        public FilmeDomain BuscarPorId(int id)
+        {
+            string Query = "select F.IdFilme, F.Titulo, F.IdGenero, G.IdGenero, G.Nome as NomeGenero from Filmes as F join Generos as G on F.IdGenero = G.IdGenero";
+
+
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                con.Open();
+                SqlDataReader sdr;
+                using (SqlCommand cmd = new SqlCommand(Query, con))
+                {
+                    cmd.Parameters.AddWithValue("IdFilme", id);
+                    sdr = cmd.ExecuteReader();
+
+                    if (sdr.HasRows)
+                    {
+                        while (sdr.Read())
+                        {
+                            FilmeDomain filme = new FilmeDomain
+                            {
+                                IdFilme = Convert.ToInt32(sdr["IdFilme"]),
+                                Titulo = sdr["Titulo"].ToString(),
+                                Genero = new GeneroDomain
+                                {
+                                    IdGenero = Convert.ToInt32(sdr["IdGenero"]),
+                                    Nome = sdr["NomeGenero"].ToString()
+                                }
+                            };
+                            return filme;
+                        }
+                    }
+                }
+                return null;
+            }
+        }//fim buscar por id
+
         //Cadastrar
         public void Cadastrar(FilmeDomain filme)
         {
@@ -26,7 +63,7 @@ namespace Senai.Filmes.WebApi.Repositories
 
                 SqlCommand cmd = new SqlCommand(Query, con);
                 cmd.Parameters.AddWithValue("@Titulo", filme.Titulo);
-                cmd.Parameters.AddWithValue("@IdEstiloMusical", filme.GeneroId);
+                cmd.Parameters.AddWithValue("@IdGenero", filme.GeneroId);
 
                 cmd.ExecuteNonQuery();
 
@@ -37,7 +74,6 @@ namespace Senai.Filmes.WebApi.Repositories
 
         //Listar
         
-        private string StringConexao = "Data Source=.\\SqlExpress; initial catalog=RoteiroFilmes; User Id=sa;Pwd=132";
 
         public List<FilmeDomain> Listar()
         {
@@ -70,7 +106,7 @@ namespace Senai.Filmes.WebApi.Repositories
                     }
                 }
             }
-            return artistas;
+            return filmes;
         }//fim Listar
 
     }

@@ -28,14 +28,12 @@ namespace Senai.Filmes.WebApi.Controllers
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(int id)
         {
-            //EstiloDomain Genero = generos.Find(x => x.IdGenero == id);
-
-            var Estilo = GeneroRepository.BuscarPorId(id);
-            if (Estilo == null)
+            var genero = GeneroRepository.BuscarPorId(id);
+            if (genero == null)
             {
                 return NotFound();
             }
-            return Ok(Estilo);
+            return Ok(genero);
         }// fim buscar por id
 
         //Cadastrar

@@ -14,7 +14,19 @@ namespace Senai.Filmes.WebApi.Controllers
     {
         FilmeRepository FilmeRepository = new FilmeRepository();
 
-        
+
+        //BuscarPorId
+        [HttpGet("{id}")]
+        public IActionResult BuscarPorId(int id)
+        {
+            var filme = FilmeRepository.BuscarPorId(id);
+            if (filme == null)
+            {
+                return NotFound();
+            }
+            return Ok(filme);
+        }// fim buscar por id
+
         //Cadastrar
         [HttpPost]
         public IActionResult Cadastrar(FilmeDomain filme)

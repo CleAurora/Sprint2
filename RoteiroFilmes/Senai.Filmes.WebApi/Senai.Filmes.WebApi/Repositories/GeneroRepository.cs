@@ -74,6 +74,7 @@ namespace Senai.Filmes.WebApi.Repositories
                 cmd.ExecuteNonQuery();
             }
         }//fim Cadastrar
+
         //Deletar
         public void Deletar(int id)
         {
@@ -107,7 +108,7 @@ namespace Senai.Filmes.WebApi.Repositories
                     {
                         GeneroDomain genero = new GeneroDomain
                         {
-                            IdGenero = Convert.ToInt32(rdr["IdGeneroMusical"]),
+                            IdGenero = Convert.ToInt32(rdr["IdGenero"]),
                             Nome = rdr["Nome"].ToString()
                         };
                         generos.Add(genero);
