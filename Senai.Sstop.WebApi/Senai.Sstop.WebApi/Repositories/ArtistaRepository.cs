@@ -18,37 +18,51 @@ namespace Senai.Sstop.WebApi.Repositories
 
             using (SqlConnection con = new SqlConnection(StringConexao))
             {
-                string Query = "SELECT A.IdArtista, A.Nome, A.IdEstiloMusical, E.Nome AS NomeEstilo FROM Artistas A INNER JOIN EstilosMusicais E ON A.IdEstiloMusical = E.IdEstiloMusical;";
-
-                // abre a conexao
+                string Query = "SELECT A.IdArtista,A.Nome,A.IdEstiloMusical,E.Nome AS NomeEstilo FROM Artistas A INNER JOIN EstilosMusicas E ON A.IdEstiloMusical = E.IdEstiloMusical";
                 con.Open();
 
                 SqlDataReader sdr;
 
-                // declara o comando
                 using (SqlCommand cmd = new SqlCommand(Query, con))
                 {
-                    // executa a query
                     sdr = cmd.ExecuteReader();
 
                     while (sdr.Read())
                     {
-                        ArtistaDomain artista = new ArtistaDomain
+                        var artista = new ArtistaDomain
                         {
                             IdArtista = Convert.ToInt32(sdr["IdArtista"]),
                             Nome = sdr["Nome"].ToString(),
                             Estilo = new EstiloDomain
                             {
                                 IdEstilo = Convert.ToInt32(sdr["IdEstiloMusical"]),
-                                Nome = sdr["NomeEstilo"].ToString()
+                                Nome = sdr["Nome"].ToString()
                             }
                         };
                         artistas.Add(artista);
                     }
-
                 }
             }
             return artistas;
+        }//metodo
+
+
+        public void Cadastrar(ArtistaDomain artista)
+        {
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+                con.Open();
+                string Query = "INSERT INTO Artistas (Nome,IdEstiloMusical) VALUES (@Nome,@IdEstiloMusical)";
+
+                SqlCommand cmd = new SqlCommand(Query, con);
+                cmd.Parameters.AddWithValue("@Nome", artista.Nome);
+                cmd.Parameters.AddWithValue("@IdEstiloMusical", artista.EstiloId);
+
+                cmd.ExecuteNonQuery();
+
+            }
         }
+
+
     }
 }
