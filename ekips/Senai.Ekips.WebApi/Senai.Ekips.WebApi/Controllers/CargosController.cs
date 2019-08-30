@@ -51,6 +51,7 @@ namespace Senai.Ekips.WebApi.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Cargo buscado</returns>
+        
         [HttpGet("{id}")]
         public IActionResult BuscarPorId(int id)
         {
