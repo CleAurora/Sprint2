@@ -27,6 +27,15 @@ namespace Senai.Ekips.WebApi.Repositories
             }
         }
 
+        public Funcionarios BuscarPorUsuarioId(int usuarioId)
+        {
+            using (EkipsContext ctx = new EkipsContext())
+            {
+                return ctx.Funcionarios.FirstOrDefault(x => x.IdUsuario == usuarioId);
+            }
+             
+        }
+
         public void Cadastrar(Funcionarios funcionario)
         {
             using (EkipsContext ctx = new EkipsContext())

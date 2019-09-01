@@ -12281,24 +12281,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\34132336883\\.nuget\\packages\\": {},
+    "C:\\Users\\CleAurora\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\34132336883\\Desktop\\SENAI\\GitHub\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj",
       "projectName": "Senai.Ekips.WebApi",
-      "projectPath": "C:\\Users\\34132336883\\Desktop\\SENAI\\GitHub\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj",
-      "packagesPath": "C:\\Users\\34132336883\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\34132336883\\Desktop\\SENAI\\GitHub\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\obj\\",
+      "projectPath": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj",
+      "packagesPath": "C:\\Users\\CleAurora\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\34132336883\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\CleAurora\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

@@ -12,3 +12,17 @@ C:\Users\34132336883\Desktop\SENAI\GitHub\Sprint2\ekips\Senai.Ekips.WebApi\Senai
 C:\Users\34132336883\Desktop\SENAI\GitHub\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\bin\Debug\netcoreapp2.1\Senai.Ekips.WebApi.pdb
 C:\Users\34132336883\Desktop\SENAI\GitHub\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.dll
 C:\Users\34132336883\Desktop\SENAI\GitHub\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.pdb
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\bin\Debug\netcoreapp2.1\Senai.Ekips.WebApi.deps.json
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\bin\Debug\netcoreapp2.1\Senai.Ekips.WebApi.runtimeconfig.json
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\bin\Debug\netcoreapp2.1\Senai.Ekips.WebApi.runtimeconfig.dev.json
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\bin\Debug\netcoreapp2.1\Senai.Ekips.WebApi.dll
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\bin\Debug\netcoreapp2.1\Senai.Ekips.WebApi.pdb
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.csprojAssemblyReference.cache
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.RazorAssemblyInfo.cache
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.RazorAssemblyInfo.cs
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.AssemblyInfoInputs.cache
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.AssemblyInfo.cs
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.dll
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\ekips\Senai.Ekips.WebApi\Senai.Ekips.WebApi\obj\Debug\netcoreapp2.1\Senai.Ekips.WebApi.pdb
