@@ -49,9 +49,7 @@ namespace Senai.Ekips.WebApi.Repositories
         {
             using (EkipsContext ctx = new EkipsContext())
             {
-                Funcionarios FuncionarioBuscado = ctx.Funcionarios.FirstOrDefault(x => x.IdFuncionario == funcionario.IdFuncionario);
-                FuncionarioBuscado.Nome = funcionario.Nome;
-                ctx.Funcionarios.Update(FuncionarioBuscado);
+                ctx.Funcionarios.Update(funcionario);
                 ctx.SaveChanges();
             }
         }
@@ -65,7 +63,5 @@ namespace Senai.Ekips.WebApi.Repositories
                 ctx.SaveChanges();
             }
         }
-
-
     }
 }

@@ -1,4 +1,6 @@
-A empresa Ekips contratou você para desenvolver a API utilizando tecnologias atuais de mercado. Ela percebeu que a equipe Administradora precisa cadastrar os dados de todos os seus funcionários e que cada funcionário participa de um determinado departamento (setor) dentro da empresa e além disso, possui um cargo.
+A empresa Ekips contratou você para desenvolver a API utilizando tecnologias atuais de mercado. Ela percebeu
+ que a equipe Administradora precisa cadastrar os dados de todos os seus funcionários e que cada funcionário 
+participa de um determinado departamento (setor) dentro da empresa e além disso, possui um cargo.
 
 Por Exemplo:
 - O Bob participa do departamento jurídico e possui o cargo de Advogado Trabalhista.
@@ -10,7 +12,8 @@ Departamentos devem conter como características somente o nome.
 Cargos devem conter como características nome e se está ativo ou não.
 
 Devem existir 2 tipos de permissão. ADMINISTRADOR e COMUM.
-O fato de ser administrador ou comum não está diretamente vinculado ao setor ou cargo. Deve estar vinculado a permissão do usuário.
+O fato de ser administrador ou comum não está diretamente vinculado ao setor ou cargo. Deve estar vinculado 
+a permissão do usuário.
 
 Banco de Dados
 M_Ekips | T_Ekips
@@ -27,8 +30,11 @@ GET /api/funcionarios
 POST /api/funcionarios
 PUT /api/funcionarios/{id}
 DELETE /api/funcionarios/{id}
-Ao trazer os funcionários, apresentar também os cargos e os devidos departamentos. Estes endpoints só podem ser acessados por usuários ADMINISTRADORES.
-Mas tem UMA condição. Caso o usuário COMUM esteja tentando acessar GET /api/funcionarios, deverá retornar somente os dados dele mesmo, ou seja, suas próprias informações. Caso contrário, caso seja ADMINISTRADOR, listar todos os funcionários. Sem regra.
+Ao trazer os funcionários, apresentar também os cargos e os devidos departamentos. Estes endpoints só podem 
+ser acessados por usuários ADMINISTRADORES.
+Mas tem UMA condição. Caso o usuário COMUM esteja tentando acessar GET /api/funcionarios, deverá retornar 
+somente os dados dele mesmo, ou seja, suas próprias informações. Caso contrário, caso seja ADMINISTRADOR, 
+listar todos os funcionários. Sem regra.
 Atenção: os endpoints de funcionários são os principais que você deverá desenvolver.
 
 Departamentos
