@@ -21,23 +21,26 @@ namespace Senai.Gufos.WebApi.Controllers
         UsuarioRepository UsuarioRepository = new UsuarioRepository();
 
         [HttpPost]
-        public IActionResult Login (LoginViewModel login)
+        public IActionResult Login(LoginViewModel login)
         {
             try
             {
-                Usuarios Usuario = UsuarioRepository.BuscarPorEmailESenha(login);
-                if (Usuario == null)
-                    return NotFound(new { mensagem = "Email ou senha inválidos." });
+                Usuarios usuarioBuscado = UsuarioRepository.BuscarPorEmailESenha(login);
+                if (usuarioBuscado == null)
+                    return NotFound(new { mensagem = "Email ou Senha Inválidos." });
 
+                // informacoes referentes ao usuario
                 var claims = new[]
-                {
+               {
+                    // chave customizada
+                    new Claim("chave", "0123456789"),
+                    new Claim("mari", "AgoraFoi"),
                     // email
-                    new Claim(JwtRegisteredClaimNames.Email, Usuario.Email),
-                    new Claim("chave", "valor"),
+                    new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
                     // id
-                    new Claim(JwtRegisteredClaimNames.Jti, Usuario.IdUsuario.ToString()),
-                    // é a permissão do usuário
-                    new Claim(ClaimTypes.Role, Usuario.Permissao),
+                    new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
+                    // permissao
+                    new Claim(ClaimTypes.Role, usuarioBuscado.Permissao),
                 };
 
                 var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("gufos-chave-autenticacao"));
@@ -48,20 +51,17 @@ namespace Senai.Gufos.WebApi.Controllers
                     issuer: "Gufos.WebApi",
                     audience: "Gufos.WebApi",
                     claims: claims,
-                    expires: DateTime.Now.AddDays(30),
+                    expires: DateTime.Now.AddMinutes(30),
                     signingCredentials: creds);
 
-                // gerar a chave pra vocês
-                // return Ok(new { mensagem = "Sucesso, bro." });
                 return Ok(new
                 {
                     token = new JwtSecurityTokenHandler().WriteToken(token)
                 });
-
             }
             catch (Exception ex)
             {
-                return BadRequest(new { mensagem = "Erro." + ex.Message });
+                return BadRequest(new { mensagem = "Erro ao cadastrar." + ex.Message });
             }
         }
     }
