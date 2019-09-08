@@ -12282,24 +12282,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin.local\\.nuget\\packages\\": {},
+    "C:\\Users\\CleAurora\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\_github\\senai-dev-2s2019\\sprint-2-backend\\roteiros\\RoteiroExtra\\Senai.Gufos.WebApi\\Senai.Gufos.WebApi\\Senai.Gufos.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\manha\\Extra\\Senai.Gufos.WebApi\\Senai.Gufos.WebApi\\Senai.Gufos.WebApi.csproj",
       "projectName": "Senai.Gufos.WebApi",
-      "projectPath": "C:\\_github\\senai-dev-2s2019\\sprint-2-backend\\roteiros\\RoteiroExtra\\Senai.Gufos.WebApi\\Senai.Gufos.WebApi\\Senai.Gufos.WebApi.csproj",
-      "packagesPath": "C:\\Users\\admin.local\\.nuget\\packages\\",
-      "outputPath": "C:\\_github\\senai-dev-2s2019\\sprint-2-backend\\roteiros\\RoteiroExtra\\Senai.Gufos.WebApi\\Senai.Gufos.WebApi\\obj\\",
+      "projectPath": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\manha\\Extra\\Senai.Gufos.WebApi\\Senai.Gufos.WebApi\\Senai.Gufos.WebApi.csproj",
+      "packagesPath": "C:\\Users\\CleAurora\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\manha\\Extra\\Senai.Gufos.WebApi\\Senai.Gufos.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\admin.local\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\CleAurora\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
