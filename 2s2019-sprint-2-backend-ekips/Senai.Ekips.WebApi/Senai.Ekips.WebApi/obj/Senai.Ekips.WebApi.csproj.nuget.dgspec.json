@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj": {}
+    "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\2s2019-sprint-2-backend-ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj": {
+    "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\2s2019-sprint-2-backend-ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\2s2019-sprint-2-backend-ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj",
         "projectName": "Senai.Ekips.WebApi",
-        "projectPath": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj",
+        "projectPath": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\2s2019-sprint-2-backend-ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi.csproj",
         "packagesPath": "C:\\Users\\CleAurora\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\obj\\",
+        "outputPath": "C:\\Users\\CleAurora\\Desktop\\SENAI\\Sprint2\\2s2019-sprint-2-backend-ekips\\Senai.Ekips.WebApi\\Senai.Ekips.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

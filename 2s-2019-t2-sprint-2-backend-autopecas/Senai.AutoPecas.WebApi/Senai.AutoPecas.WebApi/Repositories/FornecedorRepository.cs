@@ -18,7 +18,7 @@ namespace Senai.AutoPecas.WebApi.Repositories
         {
             using (AutoPecasContext ctx = new AutoPecasContext())
             {
-                return ctx.Fornecedores.Find(id);
+                return ctx.Fornecedores.FirstOrDefault(item => item.FornecedorId == id);
             }
         }
 
@@ -75,7 +75,7 @@ namespace Senai.AutoPecas.WebApi.Repositories
         {
             using (AutoPecasContext ctx = new AutoPecasContext())
             {
-                Fornecedores FornecedorBuscado = ctx.Fornecedores.Find(id);
+                Fornecedores FornecedorBuscado = ctx.Fornecedores.FirstOrDefault(item => item.FornecedorId == id);
                 ctx.Fornecedores.Remove(FornecedorBuscado);
                 ctx.SaveChanges();
             }

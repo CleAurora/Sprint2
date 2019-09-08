@@ -90,7 +90,7 @@ namespace Senai.AutoPecas.WebApi.Controllers
                 if (pecaBuscada == null)
                     return NotFound();
                 PecaRepository.Deletar(id);
-                return Ok();
+                return NoContent();
             }
             catch (Exception ex)
             {

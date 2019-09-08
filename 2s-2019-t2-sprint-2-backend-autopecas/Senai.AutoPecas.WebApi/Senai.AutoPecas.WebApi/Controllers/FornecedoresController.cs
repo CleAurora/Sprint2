@@ -17,10 +17,12 @@ namespace Senai.AutoPecas.WebApi.Controllers
     public class FornecedoresController : ControllerBase
     {
         private IFornecedorRepository FornecedorRepository { get; set; }
+        private IUsuarioRepository UsuarioRepository { get; set; }
 
         public FornecedoresController()
         {
             FornecedorRepository = new FornecedorRepository();
+            UsuarioRepository = new UsuarioRepository();
         }
 
         [HttpGet]
@@ -37,7 +39,7 @@ namespace Senai.AutoPecas.WebApi.Controllers
                 Fornecedores fornecedor = FornecedorRepository.BuscarPorId(id);
                 if (fornecedor == null)
                     return NotFound();
-                return Ok();
+                return Ok(fornecedor);
             }
             catch (Exception ex)
             {
@@ -50,8 +52,9 @@ namespace Senai.AutoPecas.WebApi.Controllers
         {
             try
             {
-                int UsuarioId = Convert.ToInt32(HttpContext.User.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Jti).Value);
-                fornecedor.UsuarioId = UsuarioId;
+                var usuarioId = UsuarioRepository.Cadastrar(fornecedor.Usuario);
+                fornecedor.Usuario = null;
+                fornecedor.UsuarioId = usuarioId;
                 FornecedorRepository.Cadastrar(fornecedor);
                 return Ok();
             }
@@ -61,15 +64,16 @@ namespace Senai.AutoPecas.WebApi.Controllers
             }
         }
 
-        [HttpPut]
-        public IActionResult Atualizar(Fornecedores fornecedor)
+        [HttpPut("{id}")]
+        public IActionResult Atualizar(int id, Fornecedores fornecedor)
         {
             try
             {
-                Fornecedores FornecedorBuscado = FornecedorRepository.BuscarPorId(fornecedor.FornecedorId);
+                Fornecedores FornecedorBuscado = FornecedorRepository.BuscarPorId(id);
                 if (FornecedorBuscado == null)
                     return NotFound();
 
+                fornecedor.FornecedorId = FornecedorBuscado.FornecedorId;
                 FornecedorRepository.Atualizar(fornecedor);
                 return Ok();
             }
@@ -82,8 +86,15 @@ namespace Senai.AutoPecas.WebApi.Controllers
         [HttpDelete("{id}")]
         public IActionResult Deletar(int id)
         {
-            FornecedorRepository.Deletar(id);
-            return Ok();
+            try
+            {
+                FornecedorRepository.Deletar(id);
+                return NoContent();
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(new { mensagem = ex.Message });
+            }
         }
 
 

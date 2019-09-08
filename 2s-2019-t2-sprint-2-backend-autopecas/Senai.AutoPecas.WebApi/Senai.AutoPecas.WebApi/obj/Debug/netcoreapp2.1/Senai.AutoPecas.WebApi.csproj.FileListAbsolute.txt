@@ -40,3 +40,17 @@ C:\Users\CleAurora\Desktop\SENAI\Sprint2\autopecas\Senai.AutoPecas.WebApi\Senai.
 C:\Users\CleAurora\Desktop\SENAI\Sprint2\autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.RazorTargetAssemblyInfo.cache
 C:\Users\CleAurora\Desktop\SENAI\Sprint2\autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.dll
 C:\Users\CleAurora\Desktop\SENAI\Sprint2\autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.pdb
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\bin\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.deps.json
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\bin\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.runtimeconfig.json
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\bin\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.runtimeconfig.dev.json
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\bin\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.dll
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\bin\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.pdb
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.csprojAssemblyReference.cache
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.RazorAssemblyInfo.cache
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.RazorAssemblyInfo.cs
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.AssemblyInfoInputs.cache
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.AssemblyInfo.cs
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.dll
+C:\Users\CleAurora\Desktop\SENAI\Sprint2\2s-2019-t2-sprint-2-backend-autopecas\Senai.AutoPecas.WebApi\Senai.AutoPecas.WebApi\obj\Debug\netcoreapp2.1\Senai.AutoPecas.WebApi.pdb

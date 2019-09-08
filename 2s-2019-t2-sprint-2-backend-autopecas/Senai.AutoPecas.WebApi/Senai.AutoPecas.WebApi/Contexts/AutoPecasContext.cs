@@ -24,7 +24,8 @@ namespace Senai.AutoPecas.WebApi.Domains
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress; Initial Catalog=M_AutoPecas;User Id=sa;Pwd=132");
+                //optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress; Initial Catalog=M_AutoPecas;User Id=sa;Pwd=132");
+                optionsBuilder.UseSqlServer("Server=DESKTOP-QG488OM; Initial Catalog=M_AutoPecas;Trusted_Connection=True;");
             }
         }
 
